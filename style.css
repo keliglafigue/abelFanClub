@@ -94,7 +94,7 @@ h1
     text-align: center;
 }
 
-.bee
+article
 {
     width: 70%;
     text-align: center;
@@ -106,4 +106,10 @@ h1
 {
     width: 960px;
     height: 540px;
+}
+
+.emote
+{
+    height: 48px;
+    width: auto;
 }
