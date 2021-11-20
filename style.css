@@ -1,4 +1,102 @@
-html, a
+/* Importe les polices de caractère */
+@font-face {
+    font-family: comicSansMS;
+    src: url(fonts/comic\ sans\ ms.ttf);
+}
+
+/* Permet d'utiliser le "ablicurseur" sur toute la page */
+*
 {
     cursor:url(img/curseur.png), auto;
+}
+
+/* Supprime les marges faite par certain navigateur autour d'une page */
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Fait en sorte que le menu de navigation utilise la FAMEUSE police "Comic Sans MS"
+et qu'elle soit en gras, puis il prend un peu plus de toute la largeure afin d'irriter
+l'utilisateur EN PLUS D'UN SATANÉ ESPACE EN HAUT car saperlipopette, c'est qui de développeur à la noix qui sait pas coder,
+je vais envoyer une lettre de réclamation moi si ca continue ! (et aussi ca met une jolie couleure de fond :D) */
+nav
+{
+    font-family: comicSansMS;
+    font-weight: bold;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    margin-top: 5px;
+    width: 101%;
+    background-color: rgb(230, 168, 0);
+}
+
+/* Supprimer le style appliqué par défaut aux éléments ul, mais uniquement dans le menu de navigation */
+nav ul
+{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+/* Supprime le style par défaut des liste */
+nav li
+{
+    list-style-type: none;
+    float: left;
+}
+
+/* Supprime les styles par défaut d'un lien */
+nav a
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 30px;
+    color: black;
+}
+
+/* Assombrie l'arrière plan lorsque notre souris pass sur un élément */
+nav li:hover
+{
+    background-color: rgba(127, 45, 204, 0.212);
+}
+
+/* Décale légèrement le tout vers le bas afin d'améliorer l'expérience irritateur, et permet de faire un effet ~arc-en-ciel~ 
+sur le texte car c'est trop beau les ~arcs-en-ciel~*/
+nav li:hover a
+{
+    padding-top: 7px;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: arcenciel_anim 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+/* Permet d'animer l'arc-en-ciel */
+@keyframes arcenciel_anim {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+h1
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bee
+{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
