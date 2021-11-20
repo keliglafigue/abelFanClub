@@ -1,5 +1,6 @@
 /* Importe les polices de caractère */
-@font-face {
+@font-face
+{
     font-family: comicSansMS;
     src: url(fonts/comic\ sans\ ms.ttf);
 }
@@ -29,7 +30,7 @@ nav
     z-index: 100;
     top: 5px;
     width: 105%;
-    background-color: rgb(230, 168, 0);
+    background-color: #ff08fc;
 }
 
 /* Supprimer le style appliqué par défaut aux éléments ul, mais uniquement dans le menu de navigation */
@@ -53,13 +54,13 @@ nav a
     display: inline-block;
     text-decoration: none;
     padding: 5px 30px;
-    color: black;
+    color: rgb(194, 194, 194);
 }
 
 /* Assombrie l'arrière plan lorsque notre souris pass sur un élément */
 nav li:hover
 {
-    background-color: rgba(127, 45, 204, 0.212);
+    background-color: #15f4ee;
 }
 
 /* Décale légèrement le tout vers le bas afin d'améliorer l'expérience irritateur, et permet de faire un effet ~arc-en-ciel~ 
