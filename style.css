@@ -72,7 +72,7 @@ nav li:hover a
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: arcenciel_anim 6s ease-in-out infinite;
+    animation: arcenciel_anim 6s linear infinite;
     background-size: 400% 100%;
 }
 
@@ -85,6 +85,7 @@ nav li:hover a
     50% {
         background-position: 100% 0;
     }
+
 }
 
 h1
@@ -99,4 +100,10 @@ h1
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.trailer
+{
+    width: 960px;
+    height: 540px;
 }
