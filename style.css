@@ -27,9 +27,8 @@ nav
     font-weight: bold;
     position: sticky;
     z-index: 100;
-    top: 0;
-    margin-top: 5px;
-    width: 101%;
+    top: 5px;
+    width: 105%;
     background-color: rgb(230, 168, 0);
 }
 
@@ -100,6 +99,19 @@ article
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
+    border: solid;
+    border-radius: 10px;
+}
+
+article h2
+{
+    margin: 5px 0px;
+}
+
+article p
+{
+    margin: 0px;
 }
 
 .trailer
@@ -110,6 +122,12 @@ article
 
 .emote
 {
-    height: 48px;
+    height: 32px;
     width: auto;
+}
+
+.affiche
+{
+    width: 960px;
+    height: auto;
 }
