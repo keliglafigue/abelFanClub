@@ -168,9 +168,9 @@ header h1
 /* Animation, fait défiler le titre en alternant la gauche et la droite (ping-pong) */
 @keyframes scrollText
 {
-    0%   { transform: translate(66.6%, 0); }
-    50% { transform: translate(-66.6%, 0); }
-    100% { transform: translate(66.6%, 0); }
+    0%   { transform: translate(100%, 0); }
+    50% { transform: translate(-100%, 0); }
+    100% { transform: translate(100%, 0); }
 }
 
 /* A utiliser pour qu'il aille jusqu'au bout, mais sinon c'est trop joli je trouve */
