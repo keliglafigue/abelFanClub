@@ -4,6 +4,7 @@
 4. Utilisation excessive de chapeau chapeau (^^)
 5. Traduction en lolcat
 6. Formulaire PHP qui permet de générer des dédicaces
+7. Police de caractère Abelifont, généré à partir de l'écriture d'Abel
 
 Pour le trailer de Abel Love Stories :
 

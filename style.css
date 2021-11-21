@@ -33,7 +33,7 @@ nav
     background-color: #ff08fc;
 }
 
-/* Supprimer le style appliqué par défaut aux éléments ul, mais uniquement dans le menu de navigation */
+/* Supprimer le style appliqué par défaut aux listes non ordonné, mais uniquement dans le menu de navigation */
 nav ul
 {
     margin: 0px;
@@ -41,7 +41,7 @@ nav ul
     overflow: hidden;
 }
 
-/* Supprime le style par défaut des liste */
+/* Supprime le style par défaut des éléments de liste */
 nav li
 {
     list-style-type: none;
@@ -88,12 +88,14 @@ nav li:hover a
 
 }
 
+/* Décale légèrement le header vers le bas afin qu'il ne soit pas sur la barre de navigation, puis aligne son texte au centre */
 header
 {
     margin-top: 10px;
     text-align: center;
 }
 
+/* Fait en sorte que les articles ne prennent pas toute la place et sois bien centré */
 article
 {
     width: 70%;
@@ -105,28 +107,42 @@ article
     border-radius: 10px;
 }
 
+/* Rajoute un espace en bas des titres d'articles */
 article h2
 {
     margin: 5px 0px;
 }
 
+/* Supprime les marges des paragraphes */
 article p
 {
     margin: 0px;
 }
 
+/* Fait en sorte que le contenu ne soit pas trop près des bordures */
+.contenu
+{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fait en sorte que le trailer prenne une résolution de 960 par 540 pixel */
 .trailer
 {
     width: 960px;
     height: 540px;
 }
 
+/* Pour ajouter des emojis dans un texte */
 .emote
 {
     height: 32px;
     width: auto;
+    vertical-align: middle;
 }
 
+/* Fait que l'affiche prenne une largeur de 960px */
 .affiche
 {
     width: 960px;
