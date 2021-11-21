@@ -128,16 +128,17 @@ article p
     margin-bottom: 5px;
 }
 
-/* Fait en sorte que le trailer prenne une résolution de 960 par 540 pixel */
+/* Fait en sorte que les vidéos youtubes prennent 80% de la place de l'article tout en étant responsive, padding-bottom = width/<rapport d'aspect de la vidéo> */
 .video-ytb
 {
 	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
+	padding-bottom: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
 }
 
+/* Fait en sorte que la vidéo prennent tout l'espace qui lui est attribué */
 .video-ytb iframe
 {
     position: absolute;
