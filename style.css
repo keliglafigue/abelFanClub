@@ -128,12 +128,15 @@ article p
     margin-bottom: 5px;
 }
 
+/* Pour signer les articles */
 .signature
 {
     font-size: 12px;
     text-align: left;
+    margin-top: 10px;
 }
 
+/* Souligne le nom de l'auteur */
 .auteur
 {
     text-decoration: underline;
