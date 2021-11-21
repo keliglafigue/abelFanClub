@@ -1,0 +1,16 @@
+.contenantSlider
+{
+    width: 100%;
+}
+
+.slider
+{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    background: rgb(74, 236, 33);
+    background-image: url(../img/abelTete.png);
+    background-position: center;
+    background-size: auto 20px;
+    border-radius: 5px;
+  }

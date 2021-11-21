@@ -185,6 +185,7 @@ header
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 20px;
 }
 
 /* Permet de faire en sorte que le texte des titres défile  */
@@ -192,7 +193,13 @@ header h1
 {
     display: inline-block;
     animation: scrollText 5s alternate linear infinite;
-} 
+    margin-bottom: 0px;
+}
+
+header p
+{
+    margin: 0px;
+}
 
 /* Animation, fait défiler le titre en alternant la gauche et la droite (ping-pong) */
 @keyframes scrollText
@@ -234,6 +241,7 @@ header h1
   background-image: url(img/abelTete.png);
   background-position: center;
   background-size: auto 20px;
+  border-radius: 50%;
 }
 
 ::-webkit-scrollbar-thumb:hover
