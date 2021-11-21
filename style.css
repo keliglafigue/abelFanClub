@@ -129,11 +129,25 @@ article p
 }
 
 /* Fait en sorte que le trailer prenne une résolution de 960 par 540 pixel */
-.trailer
+.video-ytb
 {
-    width: 960px;
-    height: 540px;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
 }
+
+.video-ytb iframe
+{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
 
 /* Pour ajouter des emojis dans un texte */
 .emote
@@ -143,10 +157,10 @@ article p
     vertical-align: middle;
 }
 
-/* Fait que l'affiche prenne une largeur de 960px */
-.affiche
+/* Pour les images des articles */
+.article-img
 {
-    width: 960px;
+    width: 80%;
     height: auto;
 }
 
