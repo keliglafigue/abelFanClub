@@ -191,19 +191,19 @@ header
 header h1
 {
     display: inline-block;
-    animation: scrollText 10s linear infinite;
+    animation: scrollText 5s alternate linear infinite;
 } 
 
 /* Animation, fait défiler le titre en alternant la gauche et la droite (ping-pong) */
 @keyframes scrollText
 {
     0%   { transform: translate(100%, 0); }
-    50% { transform: translate(-100%, 0); }
-    100% { transform: translate(100%, 0); }
+    100% { transform: translate(-100%, 0); }
 }
 
-/* A utiliser pour qu'il aille jusqu'au bout, mais sinon c'est trop joli je trouve */
-/* header h1
+/* 
+A utiliser pour qu'il aille jusqu'au bout, mais sinon c'est trop joli je trouve
+header h1
 {
     display: inline-block;
     padding-left: 100%;
@@ -216,4 +216,37 @@ header h1
     50% { transform: translate(-100%, 0); }
     100% { transform: translate(0, 0); }
 }
-*/
+ */
+
+/* Scrollbar customisé pour chrome*/
+::-webkit-scrollbar
+{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  background-image: url(img/abelTete.png);
+  background-position: center;
+  background-size: auto 20px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #888; 
+    background-image: url(img/abelTete.png);
+    background-position: center;
+    background-size: auto 20px;
+}
+
+/* Scrollbar customisé pour firefox */
+html
+{
+    scrollbar-color: #f415f4 #08ff08;
+    scrollbar-width: auto;
+}
