@@ -240,8 +240,9 @@ header h1
   background: #aaa;
   background-image: url(img/abelTete.png);
   background-position: center;
+  background-repeat: space;
   background-size: auto 20px;
-  border-radius: 50%;
+  border-radius: 16px;
 }
 
 ::-webkit-scrollbar-thumb:hover
@@ -249,7 +250,9 @@ header h1
     background: #888; 
     background-image: url(img/abelTete.png);
     background-position: center;
+    background-repeat: space;
     background-size: auto 20px;
+    border-radius: 16px;
 }
 
 /* Scrollbar customisé pour firefox */
