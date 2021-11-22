@@ -30,7 +30,7 @@ nav
     z-index: 100;
     top: 5px;
     width: 105%;
-    background-color: #ff08fc;
+    background-color: #15f4ee;
 }
 
 /* Supprimer le style appliqué par défaut aux listes non ordonné, mais uniquement dans le menu de navigation */
@@ -54,13 +54,18 @@ nav a
     display: inline-block;
     text-decoration: none;
     padding: 5px 30px;
-    color: rgb(194, 194, 194);
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: arcenciel_anim 3s linear infinite;
+    background-size: 400% 100%;
 }
 
 /* Assombrie l'arrière plan lorsque notre souris pass sur un élément */
 nav li:hover
 {
-    background-color: #15f4ee;
+    background-color: #ff08fc;
 }
 
 /* Décale légèrement le tout vers le bas afin d'améliorer l'expérience irritateur, et permet de faire un effet ~arc-en-ciel~ 
@@ -68,24 +73,22 @@ sur le texte car c'est trop beau les ~arcs-en-ciel~*/
 nav li:hover a
 {
     padding-top: 7px;
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: arcenciel_anim 6s linear infinite;
-    background-size: 400% 100%;
+    color: rgb(194, 194, 194);
 }
 
 /* Permet d'animer l'arc-en-ciel */
-@keyframes arcenciel_anim {
-    0%,100% {
-        background-position: 0 0;
+@keyframes arcenciel_anim
+{
+    0% {
+        background-position: 0% 50%;
     }
-
+    
     50% {
-        background-position: 100% 0;
+        background-position: 100% 25%;
     }
-
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Décale légèrement le header vers le bas afin qu'il ne soit pas sur la barre de navigation, puis aligne son texte au centre */
