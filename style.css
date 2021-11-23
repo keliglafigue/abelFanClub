@@ -5,17 +5,36 @@
     src: url(fonts/comic\ sans\ ms.ttf);
 }
 
+@font-face
+{
+    font-family: Abeltica;
+    src: url(fonts/Abeltica-Regular.ttf);
+}
+
 /* Permet d'utiliser le "ablicurseur" sur toute la page */
 *
 {
     cursor:url(img/curseur.png), auto;
 }
 
-/* Supprime les marges faite par certain navigateur autour d'une page */
+/* Supprime les marges faites par certain navigateur autour d'une page */
 body
 {
     margin: 0px;
     padding: 0px;
+}
+
+/* Utilise la police de charactère "Abeltica" */
+h1
+{
+    font-family: Abeltica;
+    font-size: 50px;
+}
+
+h2
+{
+    font-family: Abeltica;
+    font-size: 30px;
 }
 
 /* Fait en sorte que le menu de navigation utilise la FAMEUSE police "Comic Sans MS"
@@ -122,6 +141,8 @@ article p
 /* Fait en sorte que le contenu ne soit pas trop près des bordures */
 .contenu
 {
+    font-family: Abeltica;
+    font-size: 24px;
     width: 98%;
     margin-left: auto;
     margin-right: auto;
@@ -131,7 +152,8 @@ article p
 /* Pour signer les articles */
 .signature
 {
-    font-size: 12px;
+    font-family: Abeltica;
+    font-size: 15px;
     text-align: left;
     margin-top: 10px;
 }
