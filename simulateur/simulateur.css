@@ -1,6 +1,27 @@
-.contenantSlider
+body
+{
+    text-align: center;
+}
+
+.slidecontainer
 {
     width: 100%;
+}
+
+.gauche
+{
+    display: inline;
+    position: fixed;
+    left: 0;
+    margin-left: 1%;
+}
+
+.droite
+{
+    display: inline;
+    position: fixed;
+    right: 0;
+    margin-right: 1%;
 }
 
 .slider
@@ -13,4 +34,5 @@
     background-position: center;
     background-size: auto 20px;
     border-radius: 5px;
+    outline: none;
 }
